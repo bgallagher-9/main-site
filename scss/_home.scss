@@ -1,0 +1,77 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.home {
+  background-image: url('./images/sun1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+
+  #canvas {
+    // border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    // left: 45%;
+    right: 40%;
+    // vertical-align: middle;
+  }
+
+  .name {
+    width: 35vw;
+    height: 40vh;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 30vh;
+    border-radius: 3px;
+    line-height: 1.3em;
+    position: relative;
+    // border: 1px solid red;
+
+    div {
+      font-size: .8em;
+    }
+
+    p {
+      font-size: .6em;
+    }
+  }
+}
+
+.contact {
+  .gmail img {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+  .linkedin img {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    bottom: 10px;
+    right: 90px;
+  }
+  .github img {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+  }
+  .resume {
+    position: fixed;
+    bottom: 10px;
+    right: 130px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

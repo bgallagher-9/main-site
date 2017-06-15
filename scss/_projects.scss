@@ -1,0 +1,82 @@
+.projects {
+  background-image: url('./images/sun4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+
+  h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    padding-top: 4vh;
+  }
+
+  .project-container {
+    width: 70vw;
+    height: 85vh;
+    color: white;
+    margin: 5vh auto 0;
+    overflow: auto;
+    // border: solid 1px yellow;
+
+    .project-list {
+      text-align: center;
+
+      .project-item {
+        margin: 0 auto;
+        height: 25vh;
+        padding-top: 2vh;
+        // border: solid 1px red;
+
+        a {
+          float: left;
+          // padding-left: 5vw;
+
+          img {
+            height: 175px;
+            width: 250px;
+          }
+        }
+
+        div {
+          float: right;
+          width: 40%;
+          padding-right: 5vw;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .project-container {
+    border: 1px solid yellow;
+    .project-list {
+
+      border: 1px solid red;
+      .project-item {
+        height: 100px !important;
+        margin: 0 auto !important;
+        .project-desc {
+          display: none;
+        }
+      }
+      a {
+        float: none !important;
+        img {
+          height: 100px !important;
+          width: 150px !important;
+        }
+      }
+    }
+  }
+
+
+}
+
+// body {
+//   overflow: auto;
+// }
