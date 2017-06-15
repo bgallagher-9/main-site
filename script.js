@@ -37,10 +37,11 @@ function Animate() {
   circle.arc(100, 100, 100, angleS1 + angleC1, angleE1 + angleC1, false);
   circle.strokeStyle = 'white';
   circle.lineWidth = 5;
+  circle.padding = 5;
   circle.stroke();
   angleC1 += diff * .001;
   angleC1 %= 2*Math.PI;
-  
+
 // circle2 draw********************
   circle.beginPath();
   circle.arc(100, 100, 75, angleS2 + angleC2, angleE2 + angleC2, false);

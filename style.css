@@ -55,10 +55,9 @@ body {
   background-size: cover;
   width: 100vw;
   height: 100vh; }
-  .home #canvas {
-    position: absolute;
-    top: 50%;
-    right: 40%; }
+  .home .cvs {
+    margin: 0 auto;
+    width: 205px; }
   .home .name {
     width: 35vw;
     height: 40vh;
