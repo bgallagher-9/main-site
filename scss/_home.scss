@@ -1,5 +1,6 @@
-body {
+body, html {
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
 }
 
 .home {
@@ -7,25 +8,28 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 
   .cvs {
     margin: 0 auto;
-    width: 205px;
+    width: 202px;
   }
 
   .name {
-    width: 35vw;
-    height: 40vh;
+    width: 40vw;
+    height: 20vh;
     margin: 0 auto;
     color: white;
     font-size: 1.8em;
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 20vh;
     border-radius: 3px;
     line-height: 1.3em;
     position: relative;
+    background-attachment: fixed;
     // border: 1px solid red;
 
     div {
@@ -39,34 +43,42 @@ body {
 }
 
 .contact {
+  // z-index: 999;
   .gmail img {
     width: 25px;
     height: 25px;
     position: fixed;
-    bottom: 10px;
+    top: 10px;
     right: 10px;
   }
   .linkedin img {
     width: 25px;
     height: 25px;
     position: fixed;
-    bottom: 10px;
+    top: 10px;
     right: 90px;
   }
   .github img {
     width: 25px;
     height: 25px;
     position: fixed;
-    bottom: 10px;
+    top: 10px;
     right: 50px;
   }
   .resume {
     position: fixed;
-    bottom: 10px;
+    top: 15px;
     right: 130px;
     a {
       text-decoration: none;
       color: white;
     }
   }
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+    .home {
+        background-attachment: scroll;
+    }
 }

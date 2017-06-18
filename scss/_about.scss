@@ -4,7 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  // padding-top: 100%;
+
 
   h1 {
     font-size: 1.8em;
@@ -13,7 +15,7 @@
   }
 
   .about {
-    width: 85vw;
+    width: 60vw;
     height: 80vh;
     margin: 3vh auto 0;
     // background-color: rgba(0, 0, 0, .1);
@@ -43,4 +45,8 @@
       margin: 0 13vw;
     }
   }
+}
+
+.about-pin {
+  background-attachment: fixed;
 }
