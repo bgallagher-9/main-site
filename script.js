@@ -72,18 +72,25 @@ function Animate() {
 }
 window.requestAnimationFrame(Animate);
 
+var width1 = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
 
+var height1 = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+console.log('width1', width1, 'height1', height1)
 var aboutPin = document.querySelector('.about-pin');
-
-    function scrollPin(evt) {
-      console.log(window.scrollY);
-      let image = '100vh';
-      if (window.scrollY >= 1045) {
-        aboutPin.classList.add('about-pin');
-      }
-      else {
-        aboutPin.classList.remove('about-pin');
-      }
+  function scrollPin(evt) {
+    console.log(window.scrollY);
+    let image = height1 + 250;
+    console.log(image);
+    if (window.scrollY >= image) {
+      aboutPin.classList.add('about-pin');
     }
-
-    window.addEventListener('scroll', scrollPin);
+    else {
+      aboutPin.classList.remove('about-pin');
+    }
+  }
+window.addEventListener('scroll', scrollPin);

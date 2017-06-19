@@ -180,37 +180,31 @@ body, html {
     .projects .project-container .project-list {
       text-align: center; }
       .projects .project-container .project-list .project-item {
-        margin: 0 auto;
+        margin: 30vh auto 0;
         height: 25vh;
-        padding-top: 2vh; }
-        .projects .project-container .project-list .project-item a {
-          float: left; }
-          .projects .project-container .project-list .project-item a img {
-            height: 175px;
-            width: 250px; }
-        .projects .project-container .project-list .project-item div {
-          float: right;
-          width: 40%;
-          padding-right: 5vw; }
-
-@media (max-width: 900px) {
-  .project-container {
-    border: 1px solid yellow; }
-    .project-container .project-list {
-      border: 1px solid red; }
-      .project-container .project-list .project-item {
-        height: 100px !important;
-        margin: 0 auto !important; }
-        .project-container .project-list .project-item .project-desc {
+        padding: 2vh;
+        display: inline; }
+        .projects .project-container .project-list .project-item img {
+          height: 175px;
+          width: 250px; }
+        .projects .project-container .project-list .project-item .project-desc {
           display: none; }
-      .project-container .project-list a {
-        float: none !important; }
-        .project-container .project-list a img {
-          height: 100px !important;
-          width: 150px !important; } }
 
 .divider {
-  height: 30vh;
+  height: 250px;
   width: 100vw;
-  background-color: white;
-  box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.4); }
+  background-image: url("./images/sun3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.6); }
+  .divider .tint-divider {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    background-attachment: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 250px; }
