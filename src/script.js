@@ -21,8 +21,8 @@ let angleC4 = 0;
 var oldTimer = timing();
 
 function timing() {
-  return (new Date()).getTime()
-};
+  return (new Date()).getTime();
+}
 
 function Animate() {
   Canvas.width  = Canvas.scrollWidth;
@@ -38,7 +38,7 @@ function Animate() {
   circle.lineWidth = 5;
   circle.padding = 5;
   circle.stroke();
-  angleC1 += diff * .0004;
+  angleC1 += diff * 0.0004;
   angleC1 %= 2*Math.PI;
 
 // circle2 draw********************
@@ -47,7 +47,7 @@ function Animate() {
   circle.strokeStyle = 'white';
   circle.lineWidth = 4;
   circle.stroke();
-  angleC2 += diff * -.0003;
+  angleC2 += diff * -0.0003;
   angleC2 %= 2*Math.PI;
 
   //circle3 draw*********************
@@ -56,7 +56,7 @@ function Animate() {
   circle.strokeStyle = 'white';
   circle.lineWidth = 3;
   circle.stroke();
-  angleC3 += diff * .0003;
+  angleC3 += diff * 0.0003;
   angleC3 %= 2* Math.PI;
 
   //circle4 draw*********************
@@ -65,22 +65,18 @@ function Animate() {
   circle.strokeStyle = 'white';
   circle.lineWidth = 2;
   circle.stroke();
-  angleC4 += diff * -.0003;
+  angleC4 += diff * -0.0003;
   angleC4 %= 2* Math.PI;
 
   window.requestAnimationFrame(Animate);
 }
 window.requestAnimationFrame(Animate);
 
-var width1 = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
+var width1 = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-var height1 = window.innerHeight
-|| document.documentElement.clientHeight
-|| document.body.clientHeight;
+var height1 = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-console.log('width1', width1, 'height1', height1)
+console.log('width1', width1, 'height1', height1);
 var aboutPin = document.querySelector('.about-pin');
   function scrollPin(evt) {
     console.log(window.scrollY);
