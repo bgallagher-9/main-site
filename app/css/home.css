@@ -1,0 +1,70 @@
+body, html {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh; }
+
+.home {
+  background-image: url("./../images/sun1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
+.home .cvs {
+  margin: 0 auto;
+  width: 202px; }
+
+.home .name {
+  width: 40vw;
+  height: 20vh;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+  padding-top: 20vh;
+  border-radius: 3px;
+  line-height: 1.3em;
+  position: relative;
+  background-attachment: fixed; }
+
+.home .name div {
+  font-size: .8em; }
+
+.home .name p {
+  font-size: .6em; }
+
+.contact .gmail img {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 10px;
+  right: 10px; }
+
+.contact .linkedin img {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 10px;
+  right: 90px; }
+
+.contact .github img {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 10px;
+  right: 50px; }
+
+.contact .resume {
+  position: fixed;
+  top: 15px;
+  right: 130px; }
+
+.contact .resume a {
+  text-decoration: none;
+  color: white; }
+
+@media only screen and (max-device-width: 1024px) {
+  .home {
+    background-attachment: scroll; } }

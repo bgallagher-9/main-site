@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const args = require('yargs').argv;
+const browserSync = require('browser-sync');
 const del = require('del');
+const pump = require('pump');
 
 const glp = require('gulp-load-plugins')({lazy: true});
 
@@ -19,27 +21,70 @@ gulp.task('vet', function() {
     .pipe(glp.jshint.reporter('fail'));
 });
 
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    }
+  });
+});
+
 gulp.task('styles', ['clean-styles'], function() {
   log('Compiling Sass to CSS');
 
   return gulp
-    .src('./*.scss')
+    .src('./app/scss/*.scss')
+    .pipe(glp.plumber())
     .pipe(glp.sass())
-    .pipe(glp.sass().on('error', glp.sass.logError))
+    .pipe(glp.sass().on('error', errorLogger))
     .pipe(glp.autoprefixer({browsers: ['last 2 version', '> 5%']}))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./app/css/'));
 });
 
 gulp.task('clean-styles', function() {
-  var files = './*.css';
+  var files = [
+      './app/dist/*.css',
+      './app/css/*.css'
+  ];
   clean(files);
 });
 
-// gulp.task('sass-watch', function() {
-//   gulp.watch([]);
-// });
+gulp.task('clean', function() {
+  var files = [
+    './app/dist/*.js',
+    './app/dist/*.css'
+  ];
+  clean(files);
+});
+
+gulp.task('watch', ['browserSync'], function() {
+  gulp.watch('./app/scss/*.scss', browserSync.reload);
+  gulp.watch('./app/index.html', browserSync.reload);
+  gulp.watch('./app/src/*.js', browserSync.reload);
+});
+
+gulp.task('concat-min-js', function(done) {
+  pump([
+    (gulp.src('./app/src/*.js')),
+    (glp.concat('all.min.js')),
+    (glp.uglify()),
+    (gulp.dest('./app/dist/'))
+    ],
+  done);
+});
+
+gulp.task('concat-min-css', function() {
+  return gulp
+    .src('./app/css/*.css')
+    .pipe(glp.concat('all.min.css'))
+    .pipe(glp.uglifycss())
+    .pipe(gulp.dest('./app/dist/'));
+});
+
+gulp.task('concat-min', ['concat-min-css', 'concat-min-js'])
 
 
+///////////////////////////////////////////////////
 function log(msg) {
   if (typeof(msg) === 'object') {
     for (var item in msg) {
@@ -56,4 +101,11 @@ function log(msg) {
 function clean(path, done) {
   log('Cleaning up: ' + glp.util.colors.blue(path));
   del(path, done);
+}
+
+function errorLogger(error) {
+  log('*** Start of Error ***');
+  log(error);
+  log('*** End of Error ***');
+  this.emit('end');
 }

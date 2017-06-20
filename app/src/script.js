@@ -10,13 +10,13 @@ var angleS2 = (2 * Math.PI);
 var angleE2 = (Math.PI * 1.7);
 var angleC2 = 0;
 
-let angleS3 = (2 * Math.PI);
-let angleE3 = (Math.PI * 1.8);
-let angleC3 = 0;
+var angleS3 = (2 * Math.PI);
+var angleE3 = (Math.PI * 1.8);
+var angleC3 = 0;
 
-let angleS4 = (2 * Math.PI);
-let angleE4 = (Math.PI * 1.7);
-let angleC4 = 0;
+var angleS4 = (2 * Math.PI);
+var angleE4 = (Math.PI * 1.7);
+var angleC4 = 0;
 
 var oldTimer = timing();
 
@@ -80,7 +80,7 @@ console.log('width1', width1, 'height1', height1);
 var aboutPin = document.querySelector('.about-pin');
   function scrollPin(evt) {
     console.log(window.scrollY);
-    let image = height1 + 250;
+    var image = height1 + 250;
     console.log(image);
     if (window.scrollY >= image) {
       aboutPin.classList.add('about-pin');
