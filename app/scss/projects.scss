@@ -10,74 +10,39 @@
     color: white;
     text-align: center;
     font-size: 1.7em;
-    padding-top: 4vh;
+    padding-top: 5vh;
   }
 
   .project-container {
     width: 70vw;
-    height: 85vh;
+    height: 80vh;
     color: white;
-    margin: 5vh auto 0;
-    overflow: auto;
-    // border: solid 1px yellow;
+    margin: 10vh auto 0;
 
     .project-list {
       text-align: center;
 
       .project-item {
-        margin: 30vh auto 0;
-        height: 25vh;
-        padding: 2vh;
-        display: inline;
-        // border: solid 1px red;
-
-        //a {
-          //float: left;
-          // padding-left: 5vw;
+        display: inline-block;
+        margin: 2vh 3vh 0;
+        text-align: center;
 
           img {
             height: 175px;
             width: 250px;
+            border-radius: 20px;
+            transform-style: preserve-3d;
+            transition: all 0.8s ease-in-out;
+            perspective: 500;
           }
-        //}
 
+          img:hover {
+            transform: rotateY(540deg);
+          }
         .project-desc {
           display: none;
         }
-
-        // div {
-        //   float: right;
-        //   width: 40%;
-        //   padding-right: 5vw;
-        // }
       }
     }
   }
 }
-
-
-// @media (max-width: 900px) {
-//   .project-container {
-//     border: 1px solid yellow;
-//     .project-list {
-//
-//       border: 1px solid red;
-//       .project-item {
-//         height: 100px !important;
-//         margin: 0 auto !important;
-//         .project-desc {
-//           display: none;
-//         }
-//       }
-//       a {
-//         float: none !important;
-//         img {
-//           height: 100px !important;
-//           width: 150px !important;
-//         }
-//       }
-//     }
-//   }
-//
-//
-// }

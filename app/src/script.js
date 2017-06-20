@@ -1,3 +1,5 @@
+
+// animation for landing page
 var Canvas = document.querySelector('canvas');
 var Canvas2 = document.querySelector('canvas2');
 var circle = Canvas.getContext('2d');
@@ -65,13 +67,15 @@ function Animate() {
   circle.strokeStyle = 'white';
   circle.lineWidth = 2;
   circle.stroke();
-  angleC4 += diff * -0.0003;
+  angleC4 += diff * -0.0004;
   angleC4 %= 2* Math.PI;
 
   window.requestAnimationFrame(Animate);
 }
 window.requestAnimationFrame(Animate);
 
+
+// applying class for scrolling
 var width1 = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 var height1 = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
