@@ -43,7 +43,7 @@ gulp.task('styles', ['clean-styles'], function() {
 
 gulp.task('clean-styles', function() {
   var files = [
-      './app/dist/*.css',
+
       './app/css/*.css'
   ];
   clean(files);
@@ -57,10 +57,11 @@ gulp.task('clean', function() {
   clean(files);
 });
 
-gulp.task('watch', ['browserSync'], function() {
+gulp.task('watch', ['browserSync', 'styles', 'concat-min-css', 'concat-min-js'], function() {
   gulp.watch('./app/scss/*.scss', browserSync.reload);
   gulp.watch('./app/index.html', browserSync.reload);
   gulp.watch('./app/src/*.js', browserSync.reload);
+  gulp.watch('./app/dist/*.*', browserSync.reload);
 });
 
 gulp.task('concat-min-js', function(done) {

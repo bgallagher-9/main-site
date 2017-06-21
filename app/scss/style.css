@@ -47,75 +47,115 @@ table {
 
 body, html {
   font-family: 'Roboto', sans-serif;
-  height: 100vh; }
+  height: 100%; }
 
 .home {
-  background-image: url("./../images/sun1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; }
+  background-color: #fff;
+  width: 100%;
+  height: 100%; }
+  .home .container-home {
+    background-color: #246ad0;
+    width: 40%;
+    height: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+  .home .centered {
+    margin: 20vh auto 0; }
   .home .cvs {
     margin: 0 auto;
-    width: 202px; }
+    width: 200px; }
   .home .name {
-    width: 40vw;
-    height: 20vh;
+    width: 35vw;
+    height: 15vh;
     margin: 0 auto;
     color: white;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 10vh;
     border-radius: 3px;
-    line-height: 1.3em;
-    position: relative;
-    background-attachment: fixed; }
+    line-height: 1.3em; }
     .home .name div {
       font-size: .8em; }
     .home .name p {
       font-size: .6em; }
 
-.contact .gmail img {
-  width: 25px;
-  height: 25px;
-  position: fixed;
-  top: 10px;
-  right: 10px; }
+.home-slide {
+  transform: translateX(18vw);
+  transition: all 1.3s ease-in-out;
+  margin-top: 20vh;
+  display: inline-block; }
 
-.contact .linkedin img {
-  width: 25px;
-  height: 25px;
-  position: fixed;
-  top: 10px;
-  right: 90px; }
+.face {
+  height: 400px;
+  width: 400px;
+  margin-left: 3.5vw;
+  background-image: url("./../images/BG.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  border: 5px solid #246ad0;
+  animation: fadein 3s;
+  display: inline-block;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
-.contact .github img {
-  width: 25px;
-  height: 25px;
-  position: fixed;
-  top: 10px;
-  right: 50px; }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
-.contact .resume {
-  position: fixed;
-  top: 15px;
-  right: 130px; }
-  .contact .resume a {
-    text-decoration: none;
-    color: white; }
+@media only screen and (max-device-width: 450px) and (orientation: portrait) {
+  .home .face {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 8vh;
+    margin-left: 5vw; }
+  .home .container-home {
+    height: 30%; }
+  .home .name {
+    height: 10vh; }
+  .home .home-slide {
+    transform: translateX(20vw); }
+  .home .cvs {
+    zoom: .8; } }
 
-@media only screen and (max-device-width: 1024px) {
-  .home {
-    background-attachment: scroll; } }
+@media only screen and (max-device-width: 1025px) and (min-device-width: 500px) and (orientation: portrait) {
+  .home .container-home {
+    height: 40%; }
+  .home .home-slide {
+    transform: translateX(17vw); }
+  .home .face {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 8vh;
+    margin-left: 6vw; } }
+
+@media only screen and (max-device-width: 737px) and (orientation: landscape) {
+  .home .cvs {
+    zoom: .4;
+    padding-top: 20vh; }
+  .home .face {
+    width: 250px;
+    height: 250px;
+    margin-left: 6vw; }
+  .projects .container .project-container {
+    height: 65vh;
+    width: 75vw; }
+    .projects .container .project-container .project-list .project-item img {
+      height: 125px;
+      width: 200px; } }
+
+@media only screen and (min-device-width: 1023px) and (orientation: landscape) {
+  .home .cvs {
+    zoom: .4;
+    padding-top: 20vh; }
+  .home .face {
+    width: 250px;
+    height: 250px;
+    margin-left: 6vw; } }
 
 .about-bg {
-  background-image: url("./../images/sun2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fff;
   width: 100vw;
   height: 100%; }
   .about-bg h1 {
@@ -126,7 +166,7 @@ body, html {
     width: 60vw;
     height: 80vh;
     margin: 3vh auto 0;
-    color: white;
+    color: black;
     font-size: 1.05em;
     text-align: justify;
     padding-top: 10vh;
@@ -149,60 +189,91 @@ body, html {
 .about-pin {
   background-attachment: fixed; }
 
-.tint {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-  background-attachment: fixed;
+.contact {
+  background-color: #246ad0;
+  height: 43px;
+  width: 100%;
+  position: fixed;
   top: 0;
-  right: 0;
   left: 0;
-  bottom: 0;
-  height: 100vh; }
+  right: 0;
+  box-shadow: 0 9px 8px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.22); }
+  .contact .gmail img {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 10px;
+    right: 10px; }
+  .contact .linkedin img {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 10px;
+    right: 90px; }
+  .contact .github img {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 10px;
+    right: 50px; }
+  .contact .resume {
+    position: fixed;
+    top: 15px;
+    right: 130px; }
+    .contact .resume a {
+      text-decoration: none;
+      color: white; }
 
 .projects {
-  background-image: url("./../images/sun4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 100%; }
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  margin-top: 2vh; }
   .projects h3 {
-    color: white;
+    color: #B7390B;
     text-align: center;
-    font-size: 1.7em;
-    padding-top: 5vh; }
+    font-size: 2em;
+    font-weight: 700;
+    padding-top: 10vh; }
   .projects .project-container {
-    width: 70vw;
-    height: 80vh;
+    width: 60vw;
+    height: 60vh;
     color: white;
-    margin: 10vh auto 0; }
+    background-color: #65a6e8;
+    margin: 10vh auto 0;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
     .projects .project-container .project-list {
-      text-align: center; }
+      text-align: center;
+      padding-top: 3vh; }
       .projects .project-container .project-list .project-item {
         display: inline-block;
-        margin: 2vh 3vh 0;
+        margin: 3vh 3vh 0;
         text-align: center; }
         .projects .project-container .project-list .project-item img {
           height: 175px;
           width: 250px;
-          border-radius: 20px;
           transform-style: preserve-3d;
           transition: all 0.8s ease-in-out;
-          perspective: 500; }
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
         .projects .project-container .project-list .project-item img:hover {
           transform: rotateY(540deg); }
         .projects .project-container .project-list .project-item .project-desc {
           display: none; }
 
+@media (min-width: 1760px) {
+  .project-container img {
+    height: 300px !important;
+    width: 400px !important; } }
+
 .divider {
   height: 250px;
   width: 100vw;
-  background-image: url("./../images/sun3.jpg");
+  background-image: url("./../images/sun1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.6); }
+  box-shadow: inset 0px 0px 10px 7px rgba(0, 0, 0, 0.4); }
   .divider .tint-divider {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;

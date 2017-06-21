@@ -75,22 +75,32 @@ function Animate() {
 window.requestAnimationFrame(Animate);
 
 
-// applying class for scrolling
-var width1 = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
+// // applying class for scrolling
+ var width1 = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+//
 var height1 = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+//
+// console.log('width1', width1, 'height1', height1);
+// var aboutPin = document.querySelector('.about-pin');
+//   function scrollPin(evt) {
+//     console.log(window.scrollY);
+//     var image = height1 + 250;
+//     console.log(image);
+//     if (window.scrollY >= image) {
+//       aboutPin.classList.add('about-pin');
+//     }
+//     else {
+//       aboutPin.classList.remove('about-pin');
+//     }
+//   }
+// window.addEventListener('scroll', scrollPin);
 
-console.log('width1', width1, 'height1', height1);
-var aboutPin = document.querySelector('.about-pin');
-  function scrollPin(evt) {
-    console.log(window.scrollY);
-    var image = height1 + 250;
-    console.log(image);
-    if (window.scrollY >= image) {
-      aboutPin.classList.add('about-pin');
-    }
-    else {
-      aboutPin.classList.remove('about-pin');
-    }
-  }
-window.addEventListener('scroll', scrollPin);
+var homeSlide = document.querySelector('.container-home');
+var addFace = document.querySelector('.image');
+function intro() {
+  homeSlide.classList.add('home-slide');
+  homeSlide.classList.remove('centered');
+  addFace.classList.add('face');
+
+};
+setTimeout(intro, 2500);

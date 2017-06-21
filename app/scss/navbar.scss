@@ -1,10 +1,41 @@
-.tint {
-  background-color: rgba(0, 0, 0, .5);
-  position: relative;
-  background-attachment: fixed; 
-  top:0;
-  right:0;
-  left:0;
-  bottom:0;
-  height: 100vh;
+.contact {
+  background-color: #246ad0;
+  height: 43px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 9px 8px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.22);
+
+  .gmail img {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  .linkedin img {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 10px;
+    right: 90px;
+  }
+  .github img {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 10px;
+    right: 50px;
+  }
+  .resume {
+    position: fixed;
+    top: 15px;
+    right: 130px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
 }
