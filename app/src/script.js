@@ -97,6 +97,11 @@ var height1 = window.innerHeight || document.documentElement.clientHeight || doc
 
 var homeSlide = document.querySelector('.container-home');
 var addFace = document.querySelector('.image');
+var p1 = document.querySelector('.p-card1');
+var p2 = document.querySelector('.p-card2');
+var p3 = document.querySelector('.p-card3');
+var p4 = document.querySelector('.p-card4');
+
 function intro() {
   homeSlide.classList.add('home-slide');
   homeSlide.classList.remove('centered');
@@ -104,3 +109,8 @@ function intro() {
 
 };
 setTimeout(intro, 2500);
+
+function aboutScroll(evt) {
+  console.log(window.scrollY);
+  
+}

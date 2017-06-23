@@ -85,8 +85,8 @@ body, html {
   display: inline-block; }
 
 .face {
-  height: 400px;
-  width: 400px;
+  height: 375px;
+  width: 375px;
   margin-left: 3.5vw;
   background-image: url("./../images/BG.jpeg");
   background-repeat: no-repeat;
@@ -145,46 +145,58 @@ body, html {
       height: 125px;
       width: 200px; } }
 
-@media only screen and (min-device-width: 1023px) and (orientation: landscape) {
+@media only screen and (max-device-width: 1030px) and (orientation: landscape) {
   .home .cvs {
     zoom: .4;
     padding-top: 20vh; }
   .home .face {
     width: 250px;
     height: 250px;
-    margin-left: 6vw; } }
+    margin-left: 6vw; }
+  .home .home-slide {
+    transform: translateX(20vw); } }
 
 .about-bg {
   background-color: #fff;
-  width: 100vw;
-  height: 100%; }
-  .about-bg h1 {
-    font-size: 1.8em;
+  width: 100%;
+  height: 125%; }
+  .about-bg h3 {
+    color: #B7390B;
     text-align: center;
-    color: white; }
+    font-size: 2em;
+    font-weight: 700;
+    padding-top: 10vh; }
   .about-bg .about {
-    width: 60vw;
-    height: 80vh;
-    margin: 3vh auto 0;
+    width: 70%;
+    height: 70%;
+    margin: 3% auto 0;
     color: black;
-    font-size: 1.05em;
-    text-align: justify;
-    padding-top: 10vh;
-    border-radius: 5px;
-    line-height: 1.5em;
-    overflow: auto;
-    padding: 15px; }
-    .about-bg .about span {
-      font-size: 1.4em;
-      margin-right: 7px; }
-    .about-bg .about .logo {
-      margin: 0 auto;
-      text-align: center; }
-    .about-bg .about img {
-      width: 5vw;
-      height: 5vw;
+    outline: 1px red solid;
+    position: relative; }
+    .about-bg .about .about-card {
+      height: 275px;
+      width: 275px;
+      font-size: 1.2em;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
       text-align: center;
-      margin: 0 13vw; }
+      line-height: 1.2em;
+      display: inline-block; }
+    .about-bg .about .p-card1 {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .about-bg .about .p-card2 {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .about-bg .about .p-card3 {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .about-bg .about .p-card4 {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
 
 .about-pin {
   background-attachment: fixed; }

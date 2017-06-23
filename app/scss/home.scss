@@ -55,8 +55,8 @@ body, html {
 }
 
 .face {
-  height: 400px;
-  width: 400px;
+  height: 375px;
+  width: 375px;
   margin-left: 3.5vw;
   background-image: url('./../images/BG.jpeg');
   background-repeat: no-repeat;
@@ -144,7 +144,7 @@ body, html {
     }
   }
 };
-@media only screen and (min-device-width: 1023px) and (orientation: landscape) {
+@media only screen and (max-device-width: 1030px) and (orientation: landscape) {
   .home {
     .cvs {
         zoom: .4;
@@ -154,6 +154,9 @@ body, html {
       width: 250px;
       height: 250px;
       margin-left: 6vw;
+    }
+    .home-slide {
+      transform: translateX(20vw);
     }
   }
 };
