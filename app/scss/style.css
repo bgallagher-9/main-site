@@ -250,32 +250,56 @@ body, html {
   .projects .project-container {
     width: 60vw;
     height: 60vh;
-    color: white;
     background-color: #65a6e8;
     margin: 10vh auto 0;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
     .projects .project-container .project-list {
-      text-align: center;
-      padding-top: 3vh; }
+      text-align: center; }
       .projects .project-container .project-list .project-item {
+        height: 175px;
+        width: 250px;
+        position: relative;
+        perspective: 1000;
+        z-index: 1;
         display: inline-block;
-        margin: 3vh 3vh 0;
-        text-align: center; }
-        .projects .project-container .project-list .project-item img {
-          height: 175px;
-          width: 250px;
+        margin: 3vh 3vh 0; }
+        .projects .project-container .project-list .project-item .container {
+          height: 100%;
+          width: 100%;
           transform-style: preserve-3d;
-          transition: all 0.8s ease-in-out;
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
-        .projects .project-container .project-list .project-item img:hover {
-          transform: rotateY(540deg); }
-        .projects .project-container .project-list .project-item .project-desc {
-          display: none; }
+          transition: all 0.5s linear; }
+          .projects .project-container .project-list .project-item .container .front {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden; }
+            .projects .project-container .project-list .project-item .container .front img {
+              height: 175px;
+              width: 250px;
+              box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+        .projects .project-container .project-list .project-item .project-desc.front {
+          display: block;
+          transform: rotateY(180deg);
+          transition-delay: 1.0s;
+          box-sizing: border-box;
+          color: white;
+          text-align: center;
+          background-color: #aaa;
+          padding: 1vh; }
+          .projects .project-container .project-list .project-item .project-desc.front .source {
+            outline: 1px solid black;
+            margin: 2vh auto 0;
+            padding: 1vh;
+            display: block;
+            width: 20%; }
+      .projects .project-container .project-list .project-item:hover .container {
+        transform: rotateY(180deg);
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
 @media (min-width: 1760px) {
   .project-container img {
-    height: 300px !important;
-    width: 400px !important; } }
+    height: 300px;
+    width: 400px; } }
 
 .divider {
   height: 250px;
