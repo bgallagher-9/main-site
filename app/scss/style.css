@@ -170,36 +170,58 @@ body, html {
     width: 70%;
     height: 70%;
     margin: 3% auto 0;
-    color: black;
-    outline: 1px red solid;
+    color: white;
     position: relative; }
     .about-bg .about .about-card {
-      height: 275px;
-      width: 275px;
+      height: 260px;
+      width: 260px;
       font-size: 1.2em;
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
       text-align: center;
       line-height: 1.2em;
-      display: inline-block; }
+      display: inline-block;
+      padding: 1vw; }
     .about-bg .about .p-card1 {
       position: absolute;
-      top: 0;
-      left: 0; }
+      top: -100px;
+      left: -100px;
+      background-color: #e0a056; }
     .about-bg .about .p-card2 {
       position: absolute;
-      top: 0;
-      right: 0; }
+      top: -100px;
+      right: -100px;
+      background-color: #65A6E8; }
     .about-bg .about .p-card3 {
       position: absolute;
-      bottom: 0;
-      left: 0; }
+      bottom: -100px;
+      left: -100px;
+      background-color: #824328; }
     .about-bg .about .p-card4 {
       position: absolute;
-      bottom: 0;
-      right: 0; }
+      bottom: -100px;
+      right: -100px;
+      background-color: #B7390B; }
+    .about-bg .about .hidden {
+      display: none; }
 
-.about-pin {
-  background-attachment: fixed; }
+.fadein {
+  animation: fadein 2.7s; }
+
+.card-slide1 {
+  transform: translate(100px, 100px);
+  transition: all 1.5s ease-in-out; }
+
+.card-slide2 {
+  transform: translate(-100px, 100px);
+  transition: all 1.5s ease-in-out; }
+
+.card-slide3 {
+  transform: translate(100px, -100px);
+  transition: all 1.5s ease-in-out; }
+
+.card-slide4 {
+  transform: translate(-100px, -100px);
+  transition: all 1.5s ease-in-out; }
 
 .contact {
   background-color: #246ad0;
@@ -259,15 +281,13 @@ body, html {
         height: 175px;
         width: 250px;
         position: relative;
-        perspective: 1000;
-        z-index: 1;
         display: inline-block;
         margin: 3vh 3vh 0; }
         .projects .project-container .project-list .project-item .container {
           height: 100%;
           width: 100%;
           transform-style: preserve-3d;
-          transition: all 0.5s linear; }
+          transition: all 0.4s linear; }
           .projects .project-container .project-list .project-item .container .front {
             position: absolute;
             height: 100%;
@@ -284,14 +304,32 @@ body, html {
           box-sizing: border-box;
           color: white;
           text-align: center;
-          background-color: #aaa;
+          background-color: rgba(255, 255, 255, 0.3);
           padding: 1vh; }
-          .projects .project-container .project-list .project-item .project-desc.front .source {
-            outline: 1px solid black;
-            margin: 2vh auto 0;
-            padding: 1vh;
-            display: block;
-            width: 20%; }
+          .projects .project-container .project-list .project-item .project-desc.front .desc {
+            width: 100%;
+            height: 80%; }
+          .projects .project-container .project-list .project-item .project-desc.front .links {
+            height: 20%; }
+            .projects .project-container .project-list .project-item .project-desc.front .links a {
+              text-decoration: none;
+              color: white; }
+              .projects .project-container .project-list .project-item .project-desc.front .links a .source {
+                outline: 1px solid black;
+                margin: 0 auto;
+                padding: 2%;
+                display: inline-block;
+                width: 30%; }
+              .projects .project-container .project-list .project-item .project-desc.front .links a .floatl {
+                float: left;
+                margin-left: 2%; }
+              .projects .project-container .project-list .project-item .project-desc.front .links a .floatr {
+                float: right;
+                margin-right: 2%; }
+            .projects .project-container .project-list .project-item .project-desc.front .links a:hover {
+              color: black; }
+              .projects .project-container .project-list .project-item .project-desc.front .links a:hover .source {
+                background-color: rgba(255, 255, 255, 0.8); }
       .projects .project-container .project-list .project-item:hover .container {
         transform: rotateY(180deg);
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }

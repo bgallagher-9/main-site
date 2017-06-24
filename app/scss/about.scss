@@ -16,48 +16,69 @@
     width: 70%;
     height: 70%;
     margin: 3% auto 0;
-    color: black;
-    outline: 1px red solid;
+    color: white;
+    // outline: 1px red solid;
     position: relative;
-
     .about-card {
-      height: 275px;
-      width: 275px;
+      height: 260px;
+      width: 260px;
       font-size: 1.2em;
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-      // padding: 5%;
-
       text-align: center;
       line-height: 1.2em;
-
       display: inline-block;
+      padding: 1vw;
     }
     .p-card1 {
-      // float: left;
-      // display: inline-block;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -100px;
+      left: -100px;
+      background-color: #e0a056;
     }
     .p-card2 {
       position: absolute;
-      // display: inline-block;
-      top: 0;
-      right: 0;
+      top: -100px;
+      right: -100px;
+      background-color: #65A6E8;
     }
     .p-card3 {
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: -100px;
+      left: -100px;
+      background-color: #824328;
     }
     .p-card4 {
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: -100px;
+      right: -100px;
+      background-color: #B7390B;
+    }
+    .hidden {
+      display: none;
     }
   }
 }
 
-.about-pin {
-  background-attachment: fixed;
+.fadein {
+  animation: fadein 2.7s;
+}
+
+
+
+.card-slide1 {
+  transform: translate(100px, 100px);
+  transition: all 1.5s ease-in-out;
+
+}
+.card-slide2 {
+  transform: translate(-100px, 100px);
+  transition: all 1.5s ease-in-out;
+  }
+.card-slide3 {
+  transform: translate(100px, -100px);
+  transition: all 1.5s ease-in-out;
+}
+.card-slide4 {
+  transform: translate(-100px, -100px);
+  transition: all 1.5s ease-in-out;
 }

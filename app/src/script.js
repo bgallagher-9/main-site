@@ -75,25 +75,8 @@ function Animate() {
 window.requestAnimationFrame(Animate);
 
 
-// // applying class for scrolling
- var width1 = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-//
+var width1 = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 var height1 = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-//
-// console.log('width1', width1, 'height1', height1);
-// var aboutPin = document.querySelector('.about-pin');
-//   function scrollPin(evt) {
-//     console.log(window.scrollY);
-//     var image = height1 + 250;
-//     console.log(image);
-//     if (window.scrollY >= image) {
-//       aboutPin.classList.add('about-pin');
-//     }
-//     else {
-//       aboutPin.classList.remove('about-pin');
-//     }
-//   }
-// window.addEventListener('scroll', scrollPin);
 
 var homeSlide = document.querySelector('.container-home');
 var addFace = document.querySelector('.image');
@@ -112,5 +95,23 @@ setTimeout(intro, 2500);
 
 function aboutScroll(evt) {
   console.log(window.scrollY);
-  
+  if (window.scrollY >= 410) {
+    p1.classList.add('card-slide1');
+    p2.classList.add('card-slide2');
+    p3.classList.add('card-slide3');
+    p4.classList.add('card-slide4');
+
+  }
+  if (window.scrollY >= 390) {
+    p1.classList.remove('hidden');
+    p2.classList.remove('hidden');
+    p3.classList.remove('hidden');
+    p4.classList.remove('hidden');
+    p1.classList.add('fadein');
+    p2.classList.add('fadein');
+    p3.classList.add('fadein');
+    p4.classList.add('fadein');
+  }
 }
+
+window.addEventListener('scroll', aboutScroll);
