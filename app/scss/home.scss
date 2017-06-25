@@ -14,11 +14,10 @@ body, html {
       background-color: #246ad0;
       width: 40%;
       height: 50%;
-      // box-shadow: 30px 30px 6px -5px rgba(0,0,0,0.3);
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
     .centered {
-      margin: 20vh auto 0;
+      margin: 20% auto 0;
     }
 
   .cvs {
@@ -62,8 +61,8 @@ body, html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 100%;
-  border: 5px solid #246ad0;
+  // border-radius: 100%;
+  border: 2px solid #246ad0;
   animation: fadein 3s;
   display: inline-block;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -74,31 +73,140 @@ body, html {
     to   { opacity: 1; }
 }
 
-@media only screen and (max-device-width: 450px) and (orientation: portrait) {
+@media (max-width: 400px) and (orientation: portrait) {
   .home {
     .face {
-      height: 250px;
-      width: 250px;
-      margin-bottom: 8vh;
-      margin-left: 5vw;
+      height: 125px;
+      width: 125px;
+      margin-bottom: 3%;
+      margin-left: 3%;
+      margin-top: 2%;
     }
     .container-home {
-      height: 30%;
-
+      margin-top: 40%;
+      height: 37%;
+      width: 45%;
     }
     .name {
-      height: 10vh;
+      font-size: 1em;
+      padding-top: 1vh;
+      line-height: 1.1em;
     }
     .home-slide {
-      transform: translateX(20vw);
+      transform: translateX(13%);
     }
     .cvs {
-      zoom: .8;
+      zoom: .3;
+      padding-top: 35%;
+    }
+  }
+};
+@media (max-width: 641px) and (orientation: landscape) {
+  .home {
+    .face {
+      height: 125px;
+      width: 125px;
+      margin-left: 5%;
+    }
+    .container-home {
+      margin-top: 20%;
+      height: 45%;
+      width: 45%;
+    }
+    .name {
+      font-size: 1em;
+      padding-top: 1vh;
+      line-height: 1.1em;
+    }
+    .home-slide {
+      transform: translateX(45%);
+    }
+    .cvs {
+      zoom: .4;
+      padding-top: 7%;
     }
   }
 };
 
-@media only screen and (max-device-width: 1025px) and (min-device-width: 500px) and (orientation: portrait) {
+@media (max-width: 450px) and (min-width: 400px) and (orientation: portrait) {
+  .home {
+    .face {
+      height: 125px;
+      width: 125px;
+      margin-bottom: 2vh;
+      margin-left: 5%;
+    }
+    .container-home {
+      margin-top: 40%;
+      height: 30%;
+      width: 45%;
+    }
+    .name {
+      font-size: 1em;
+      padding-top: 1vh;
+      line-height: 1.1em;
+    }
+    .home-slide {
+      transform: translateX(10vw);
+    }
+    .cvs {
+      zoom: .3;
+      padding-top: 16vh;
+    }
+  }
+};
+
+@media (max-width: 737px) and (min-width: 666px) and (orientation: landscape) {
+  .home {
+    .face {
+      height: 175px;
+      width: 175px;
+      margin-left: 5%;
+      margin-bottom: -2%;
+    }
+    .container-home {
+      margin-top: 20%;
+      height: 45%;
+      width: 45%;
+    }
+    .name {
+      font-size: 1em;
+      padding-top: 1vh;
+      line-height: 1.1em;
+    }
+    .home-slide {
+      transform: translateX(42%);
+    }
+    .cvs {
+      zoom: .4;
+      padding-top: 7%;
+    }
+  }
+  .projects {
+    .project-container {
+      height: 65vh;
+      width: 75vw;
+      .project-list {
+        .project-item {
+          margin: 2vh 2vw 0;
+          height: 125px;
+          width: 200px;
+          .container {
+            .front {
+              img {
+                height: 125px;
+                width: 200px;
+                box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+@media (max-width: 1025px) and (min-width: 500px) and (orientation: portrait) {
   .home {
     .container-home {
       height: 40%;
@@ -114,49 +222,3 @@ body, html {
     }
   }
 }
-
-@media only screen and (max-device-width: 737px) and (orientation: landscape) {
-  .home {
-    .cvs {
-        zoom: .4;
-        padding-top: 20vh;
-    }
-    .face {
-      width: 250px;
-      height: 250px;
-      margin-left: 6vw;
-    }
-  }
-  .projects {
-    .container {
-      .project-container {
-        height: 65vh;
-        width: 75vw;
-        .project-list {
-          .project-item {
-            img {
-              height: 125px;
-              width: 200px;
-            }
-          }
-        }
-      }
-    }
-  }
-};
-@media only screen and (max-device-width: 1030px) and (orientation: landscape) {
-  .home {
-    .cvs {
-        zoom: .4;
-        padding-top: 20vh;
-    }
-    .face {
-      width: 250px;
-      height: 250px;
-      margin-left: 6vw;
-    }
-    .home-slide {
-      transform: translateX(20vw);
-    }
-  }
-};
