@@ -88,6 +88,7 @@ var p4 = document.querySelector('.p-card4');
 function intro() {
   homeSlide.classList.add('home-slide');
   homeSlide.classList.remove('centered');
+  homeSlide.classList.add('top-margin');
   addFace.classList.add('face');
 
 };

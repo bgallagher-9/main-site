@@ -1,7 +1,7 @@
 .contact {
   background-color: #246ad0;
   height: 43px;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,26 +13,26 @@
     height: 25px;
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: 12px;
   }
   .linkedin img {
     width: 25px;
     height: 25px;
     position: fixed;
     top: 10px;
-    right: 90px;
+    right: 92px;
   }
   .github img {
     width: 25px;
     height: 25px;
     position: fixed;
     top: 10px;
-    right: 50px;
+    right: 52px;
   }
   .resume {
     position: fixed;
     top: 15px;
-    right: 130px;
+    right: 132px;
     a {
       text-decoration: none;
       color: white;

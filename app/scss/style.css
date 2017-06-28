@@ -60,6 +60,8 @@ body, html {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
   .home .centered {
     margin: 20% auto 0; }
+  .home .top-margin {
+    margin-top: 20%; }
   .home .cvs {
     margin: 0 auto;
     width: 200px; }
@@ -70,7 +72,7 @@ body, html {
     color: white;
     font-size: 1.5em;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 14%;
     border-radius: 3px;
     line-height: 1.3em; }
     .home .name div {
@@ -81,7 +83,6 @@ body, html {
 .home-slide {
   transform: translateX(18vw);
   transition: all 1.3s ease-in-out;
-  margin-top: 20vh;
   display: inline-block; }
 
 .face {
@@ -92,6 +93,7 @@ body, html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 100%;
   border: 2px solid #246ad0;
   animation: fadein 3s;
   display: inline-block;
@@ -107,19 +109,17 @@ body, html {
   .home .face {
     height: 125px;
     width: 125px;
-    margin-bottom: 3%;
-    margin-left: 3%;
-    margin-top: 2%; }
+    margin-bottom: 3%; }
   .home .container-home {
     margin-top: 40%;
-    height: 37%;
+    height: 35%;
     width: 45%; }
   .home .name {
     font-size: 1em;
     padding-top: 1vh;
     line-height: 1.1em; }
   .home .home-slide {
-    transform: translateX(13%); }
+    transform: translateX(12%); }
   .home .cvs {
     zoom: .3;
     padding-top: 35%; } }
@@ -143,7 +143,7 @@ body, html {
     zoom: .4;
     padding-top: 7%; } }
 
-@media (max-width: 450px) and (min-width: 400px) and (orientation: portrait) {
+@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
   .home .face {
     height: 125px;
     width: 125px;
@@ -160,8 +160,8 @@ body, html {
   .home .home-slide {
     transform: translateX(10vw); }
   .home .cvs {
-    zoom: .3;
-    padding-top: 16vh; } }
+    zoom: .4;
+    padding-top: 10%; } }
 
 @media (max-width: 737px) and (min-width: 666px) and (orientation: landscape) {
   .home .face {
@@ -194,7 +194,41 @@ body, html {
         width: 200px;
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); } }
 
-@media (max-width: 1025px) and (min-width: 500px) and (orientation: portrait) {
+@media (max-width: 1025px) and (min-width: 730px) and (orientation: portrait) {
+  .home .container-home {
+    height: 40%; }
+  .home .home-slide {
+    transform: translateX(17vw); }
+  .home .name {
+    font-size: 1.2em;
+    padding-top: 4vh;
+    line-height: 1.1em; }
+  .home .face {
+    height: 250px;
+    width: 250px;
+    margin-left: 6vw; }
+  .home .cvs {
+    zoom: .5;
+    margin-top: 6%; } }
+
+@media (max-width: 729px) and (min-width: 501px) and (orientation: portrait) {
+  .home .container-home {
+    height: 35%; }
+  .home .home-slide {
+    transform: translateX(10vw); }
+  .home .name {
+    font-size: 1.2em;
+    padding-top: 4vh;
+    line-height: 1.1em; }
+  .home .face {
+    height: 200px;
+    width: 200px;
+    margin-left: 5vw; }
+  .home .cvs {
+    zoom: .5;
+    margin-top: 6%; } }
+
+@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .home .container-home {
     height: 40%; }
   .home .home-slide {
@@ -203,18 +237,21 @@ body, html {
     height: 250px;
     width: 250px;
     margin-bottom: 8vh;
-    margin-left: 6vw; } }
+    margin-left: 6vw; }
+  .home .cvs {
+    zoom: .5;
+    margin-top: 6%; } }
 
 .about-bg {
   background-color: #fff;
   width: 100%;
-  height: 125%; }
+  min-height: 100%; }
   .about-bg h3 {
     color: #B7390B;
     text-align: center;
     font-size: 2em;
     font-weight: 700;
-    padding-top: 10vh; }
+    padding-top: 15%; }
   .about-bg .about {
     width: 70%;
     height: 70%;
@@ -229,7 +266,7 @@ body, html {
       text-align: center;
       line-height: 1.2em;
       display: inline-block;
-      padding: 1vw; }
+      padding: 2%; }
     .about-bg .about .p-card1 {
       position: absolute;
       top: -100px;
@@ -272,10 +309,42 @@ body, html {
   transform: translate(-100px, -100px);
   transition: all 1.5s ease-in-out; }
 
+@media (max-width: 400px) and (orientation: portrait) {
+  .about-bg .about .about-card {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    font-size: 1.1em;
+    line-height: 1.1em; }
+  .about-bg .about .p-card1 {
+    position: static;
+    background-color: #e0a056; }
+  .about-bg .about .p-card2 {
+    position: static;
+    background-color: #65A6E8; }
+  .about-bg .about .p-card3 {
+    position: static;
+    background-color: #824328; }
+  .about-bg .about .p-card4 {
+    position: static;
+    background-color: #B7390B; }
+  .about-bg .about .card-slide1 {
+    transform: translate(0px, 0px);
+    transition: all 1.5s ease-in-out; }
+  .about-bg .about .card-slide2 {
+    transform: translate(0px, 0px);
+    transition: all 1.5s ease-in-out; }
+  .about-bg .about .card-slide3 {
+    transform: translate(0px, 0px);
+    transition: all 1.5s ease-in-out; }
+  .about-bg .about .card-slide4 {
+    transform: translate(0px, 0px);
+    transition: all 1.5s ease-in-out; } }
+
 .contact {
   background-color: #246ad0;
   height: 43px;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -286,23 +355,23 @@ body, html {
     height: 25px;
     position: fixed;
     top: 10px;
-    right: 10px; }
+    right: 12px; }
   .contact .linkedin img {
     width: 25px;
     height: 25px;
     position: fixed;
     top: 10px;
-    right: 90px; }
+    right: 92px; }
   .contact .github img {
     width: 25px;
     height: 25px;
     position: fixed;
     top: 10px;
-    right: 50px; }
+    right: 52px; }
   .contact .resume {
     position: fixed;
     top: 15px;
-    right: 130px; }
+    right: 132px; }
     .contact .resume a {
       text-decoration: none;
       color: white; }
@@ -390,7 +459,7 @@ body, html {
 
 .divider {
   height: 250px;
-  width: 100vw;
+  width: 100%;
   background-image: url("./../images/sun1.jpg");
   background-position: center;
   background-repeat: no-repeat;
