@@ -14,10 +14,10 @@ body, html {
 
     }
     .centered {
-      margin: 20% auto 0;
+      margin: 15% auto 0;
     }
     .top-margin {
-      margin-top: 20%;
+      margin-top: 15%;
     }
   .cvs {
     margin: 0 auto;
@@ -43,7 +43,7 @@ body, html {
 }
 
 .home-slide {
-  transform: translateX(18vw);
+  transform: translateX(45%);
   transition: all 1.3s ease-in-out;
   display: inline-block;
 }
@@ -51,7 +51,7 @@ body, html {
 .face {
   height: 375px;
   width: 375px;
-  margin-left: 3.5vw;
+  margin-left: 7%;
   background-image: url('./../images/BG.jpeg');
   background-repeat: no-repeat;
   background-position: center;
@@ -74,6 +74,7 @@ body, html {
       height: 125px;
       width: 125px;
       margin-bottom: 3%;
+      margin-left: 5%;
     }
     .container-home {
       margin-top: 40%;
@@ -86,7 +87,7 @@ body, html {
       line-height: 1.1em;
     }
     .home-slide {
-      transform: translateX(12%);
+      transform: translateX(15%);
     }
     .cvs {
       zoom: .3;
@@ -151,7 +152,7 @@ body, html {
   }
 };
 
-@media (max-width: 737px) and (min-width: 666px) and (orientation: landscape) {
+@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
   .home {
     .face {
       height: 175px;
@@ -177,77 +178,74 @@ body, html {
       padding-top: 7%;
     }
   }
-  .projects {
-    .project-container {
-      height: 65vh;
-      width: 75vw;
-      .project-list {
-        .project-item {
-          margin: 2vh 2vw 0;
-          height: 125px;
-          width: 200px;
-          .container {
-            .front {
-              img {
-                height: 125px;
-                width: 200px;
-                box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 };
-
-@media (max-width: 1025px) and (min-width: 730px) and (orientation: portrait) {
-  .home {
-    .container-home {
-      height: 40%;
-    }
-    .home-slide {
-      transform: translateX(17vw);
-    }
-    .name {
-      font-size: 1.2em;
-      padding-top: 4vh;
-      line-height: 1.1em;
-    }
-    .face {
-      height: 250px;
-      width: 250px;
-      // margin-bottom: 8vh;
-      margin-left: 6vw;
-    }
-    .cvs {
-      zoom: .5;
-      margin-top: 6%;
-    }
-  }
-}
-@media (max-width: 729px) and (min-width: 501px) and (orientation: portrait) {
+@media (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
   .home {
     .container-home {
       height: 35%;
     }
     .home-slide {
-      transform: translateX(10vw);
+      transform: translateX(35%);
     }
     .name {
       font-size: 1.2em;
       padding-top: 4vh;
-      line-height: 1.1em;
+      line-height: 1.3em;
+      h1 {
+        font-size: 1.3em;
+      }
+      div {
+        font-size: 1em;
+      }
+      p {
+        font-size: .9em;
+      }
     }
     .face {
-      height: 200px;
-      width: 200px;
-      // margin-bottom: 8vh;
-      margin-left: 5vw;
+      height: 225px;
+      width: 225px;
+      margin-left: 7%;
+      margin-bottom: 7%;
     }
     .cvs {
-      zoom: .5;
-      margin-top: 6%;
+      zoom: .8;
+      // margin-top: 6%;
+    }
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 769px) and (orientation: portrait) {
+  .home {
+    // margin-top: 15%;
+    .container-home {
+      height: 35%;
+    }
+    .home-slide {
+      transform: translateX(40%);
+    }
+    .name {
+      font-size: 1.2em;
+      padding-top: 4vh;
+      line-height: 1.2em;
+      h1 {
+        font-size: 1.4em;
+      }
+      div {
+        font-size: 1.1em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+    .face {
+      height: 250px;
+      width: 250px;
+      margin-bottom: 10%;
+      margin-left: 10%;
+    }
+    .cvs {
+      // zoom: 1;
+      padding-top: 5%;
     }
   }
 }
@@ -260,10 +258,15 @@ body, html {
     .home-slide {
       transform: translateX(17vw);
     }
+    .name {
+      font-size: 1.4em;
+      line-height: 1.2em;
+
+    }
     .face {
       height: 250px;
       width: 250px;
-      margin-bottom: 8vh;
+      // margin-bottom: 8vh;
       margin-left: 6vw;
     }
     .cvs {

@@ -59,9 +59,9 @@ body, html {
     height: 50%;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
   .home .centered {
-    margin: 20% auto 0; }
+    margin: 15% auto 0; }
   .home .top-margin {
-    margin-top: 20%; }
+    margin-top: 15%; }
   .home .cvs {
     margin: 0 auto;
     width: 200px; }
@@ -81,14 +81,14 @@ body, html {
       font-size: .6em; }
 
 .home-slide {
-  transform: translateX(18vw);
+  transform: translateX(45%);
   transition: all 1.3s ease-in-out;
   display: inline-block; }
 
 .face {
   height: 375px;
   width: 375px;
-  margin-left: 3.5vw;
+  margin-left: 7%;
   background-image: url("./../images/BG.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -109,7 +109,8 @@ body, html {
   .home .face {
     height: 125px;
     width: 125px;
-    margin-bottom: 3%; }
+    margin-bottom: 3%;
+    margin-left: 5%; }
   .home .container-home {
     margin-top: 40%;
     height: 35%;
@@ -119,7 +120,7 @@ body, html {
     padding-top: 1vh;
     line-height: 1.1em; }
   .home .home-slide {
-    transform: translateX(12%); }
+    transform: translateX(15%); }
   .home .cvs {
     zoom: .3;
     padding-top: 35%; } }
@@ -163,7 +164,7 @@ body, html {
     zoom: .4;
     padding-top: 10%; } }
 
-@media (max-width: 737px) and (min-width: 666px) and (orientation: landscape) {
+@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
   .home .face {
     height: 175px;
     width: 175px;
@@ -181,62 +182,65 @@ body, html {
     transform: translateX(42%); }
   .home .cvs {
     zoom: .4;
-    padding-top: 7%; }
-  .projects .project-container {
-    height: 65vh;
-    width: 75vw; }
-    .projects .project-container .project-list .project-item {
-      margin: 2vh 2vw 0;
-      height: 125px;
-      width: 200px; }
-      .projects .project-container .project-list .project-item .container .front img {
-        height: 125px;
-        width: 200px;
-        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); } }
+    padding-top: 7%; } }
 
-@media (max-width: 1025px) and (min-width: 730px) and (orientation: portrait) {
-  .home .container-home {
-    height: 40%; }
-  .home .home-slide {
-    transform: translateX(17vw); }
-  .home .name {
-    font-size: 1.2em;
-    padding-top: 4vh;
-    line-height: 1.1em; }
-  .home .face {
-    height: 250px;
-    width: 250px;
-    margin-left: 6vw; }
-  .home .cvs {
-    zoom: .5;
-    margin-top: 6%; } }
-
-@media (max-width: 729px) and (min-width: 501px) and (orientation: portrait) {
+@media (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
   .home .container-home {
     height: 35%; }
   .home .home-slide {
-    transform: translateX(10vw); }
+    transform: translateX(35%); }
   .home .name {
     font-size: 1.2em;
     padding-top: 4vh;
-    line-height: 1.1em; }
+    line-height: 1.3em; }
+    .home .name h1 {
+      font-size: 1.3em; }
+    .home .name div {
+      font-size: 1em; }
+    .home .name p {
+      font-size: .9em; }
   .home .face {
-    height: 200px;
-    width: 200px;
-    margin-left: 5vw; }
+    height: 225px;
+    width: 225px;
+    margin-left: 7%;
+    margin-bottom: 7%; }
   .home .cvs {
-    zoom: .5;
-    margin-top: 6%; } }
+    zoom: .8; } }
+
+@media (max-width: 1025px) and (min-width: 769px) and (orientation: portrait) {
+  .home .container-home {
+    height: 35%; }
+  .home .home-slide {
+    transform: translateX(40%); }
+  .home .name {
+    font-size: 1.2em;
+    padding-top: 4vh;
+    line-height: 1.2em; }
+    .home .name h1 {
+      font-size: 1.4em; }
+    .home .name div {
+      font-size: 1.1em; }
+    .home .name p {
+      font-size: 1em; }
+  .home .face {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10%;
+    margin-left: 10%; }
+  .home .cvs {
+    padding-top: 5%; } }
 
 @media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .home .container-home {
     height: 40%; }
   .home .home-slide {
     transform: translateX(17vw); }
+  .home .name {
+    font-size: 1.4em;
+    line-height: 1.2em; }
   .home .face {
     height: 250px;
     width: 250px;
-    margin-bottom: 8vh;
     margin-left: 6vw; }
   .home .cvs {
     zoom: .5;
@@ -245,22 +249,23 @@ body, html {
 .about-bg {
   background-color: #fff;
   width: 100%;
-  min-height: 100%; }
+  min-height: 125%;
+  display: block; }
   .about-bg h3 {
     color: #B7390B;
     text-align: center;
     font-size: 2em;
     font-weight: 700;
-    padding-top: 15%; }
+    padding-top: 10%; }
   .about-bg .about {
-    width: 70%;
-    height: 70%;
-    margin: 3% auto 0;
+    width: 1050px;
+    height: 750px;
+    margin: 3% auto 10%;
     color: white;
     position: relative; }
     .about-bg .about .about-card {
-      height: 260px;
-      width: 260px;
+      height: 250px;
+      width: 250px;
       font-size: 1.2em;
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
       text-align: center;
@@ -294,57 +299,145 @@ body, html {
   animation: fadein 2.7s; }
 
 .card-slide1 {
-  transform: translate(100px, 100px);
+  transform: translate(110px, 110px);
   transition: all 1.5s ease-in-out; }
 
 .card-slide2 {
-  transform: translate(-100px, 100px);
+  transform: translate(-110px, 110px);
   transition: all 1.5s ease-in-out; }
 
 .card-slide3 {
-  transform: translate(100px, -100px);
+  transform: translate(110px, -110px);
   transition: all 1.5s ease-in-out; }
 
 .card-slide4 {
-  transform: translate(-100px, -100px);
+  transform: translate(-110px, -110px);
   transition: all 1.5s ease-in-out; }
 
 @media (max-width: 400px) and (orientation: portrait) {
-  .about-bg .about .about-card {
-    height: 200px;
-    width: 200px;
-    display: inline-block;
-    font-size: 1.1em;
-    line-height: 1.1em; }
-  .about-bg .about .p-card1 {
-    position: static;
-    background-color: #e0a056; }
-  .about-bg .about .p-card2 {
-    position: static;
-    background-color: #65A6E8; }
-  .about-bg .about .p-card3 {
-    position: static;
-    background-color: #824328; }
-  .about-bg .about .p-card4 {
-    position: static;
-    background-color: #B7390B; }
-  .about-bg .about .card-slide1 {
-    transform: translate(0px, 0px);
-    transition: all 1.5s ease-in-out; }
-  .about-bg .about .card-slide2 {
-    transform: translate(0px, 0px);
-    transition: all 1.5s ease-in-out; }
-  .about-bg .about .card-slide3 {
-    transform: translate(0px, 0px);
-    transition: all 1.5s ease-in-out; }
-  .about-bg .about .card-slide4 {
-    transform: translate(0px, 0px);
-    transition: all 1.5s ease-in-out; } }
+  .about-bg {
+    margin: 0 auto; }
+    .about-bg .about {
+      min-height: min-content;
+      width: 300px;
+      text-align: center;
+      display: block; }
+      .about-bg .about .about-card {
+        height: 225px;
+        width: 225px;
+        display: inline-block;
+        margin: 5% auto 0;
+        font-size: 1.1em;
+        line-height: 1.2em; }
+      .about-bg .about .p-card1 {
+        position: static; }
+      .about-bg .about .p-card2 {
+        position: static; }
+      .about-bg .about .p-card3 {
+        position: static; }
+      .about-bg .about .p-card4 {
+        position: static; }
+      .about-bg .about .card-slide1 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide2 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide3 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide4 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; } }
+
+@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+  .about-bg {
+    margin: 0 auto; }
+    .about-bg .about {
+      min-height: min-content;
+      width: 375px;
+      text-align: center;
+      display: block; }
+      .about-bg .about .about-card {
+        height: 260px;
+        width: 275px;
+        margin: 5% auto 0;
+        font-size: 1.3em;
+        line-height: 1.2em; }
+      .about-bg .about .p-card1 {
+        position: static; }
+      .about-bg .about .p-card2 {
+        position: static; }
+      .about-bg .about .p-card3 {
+        position: static; }
+      .about-bg .about .p-card4 {
+        position: static; }
+      .about-bg .about .card-slide1 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide2 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide3 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide4 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; } }
+
+@media (max-width: 1025px) and (min-width: 730px) and (orientation: portrait) {
+  .about-bg {
+    min-height: 100%; }
+    .about-bg .about {
+      height: 800px;
+      width: 700px; } }
+
+@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
+  .about-bg {
+    min-height: 100%; }
+    .about-bg .about {
+      min-height: min-content;
+      width: 600px;
+      text-align: center;
+      display: block; }
+      .about-bg .about .about-card {
+        height: 260px;
+        width: 275px;
+        margin: 5% auto 0;
+        font-size: 1.3em;
+        line-height: 1.2em; }
+      .about-bg .about .p-card1 {
+        position: static; }
+      .about-bg .about .p-card2 {
+        position: static; }
+      .about-bg .about .p-card3 {
+        position: static; }
+      .about-bg .about .p-card4 {
+        position: static; }
+      .about-bg .about .card-slide1 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide2 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide3 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide4 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; } }
+
+@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+  .about-bg {
+    min-height: 100%; }
+    .about-bg .about {
+      height: 800px;
+      width: 700px; } }
 
 .contact {
   background-color: #246ad0;
   height: 43px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -379,14 +472,13 @@ body, html {
 .projects {
   background-color: #fff;
   width: 100%;
-  height: 100%;
-  margin-top: 2vh; }
+  height: 100%; }
   .projects h3 {
     color: #B7390B;
     text-align: center;
     font-size: 2em;
     font-weight: 700;
-    padding-top: 10vh; }
+    padding-top: 10%; }
   .projects .project-container {
     width: 60vw;
     height: 60vh;
@@ -400,7 +492,7 @@ body, html {
         width: 250px;
         position: relative;
         display: inline-block;
-        margin: 5vh 3vw 0; }
+        margin: 7% 5% 0; }
         .projects .project-container .project-list .project-item .container {
           height: 100%;
           width: 100%;
@@ -433,7 +525,7 @@ body, html {
               text-decoration: none;
               color: white; }
               .projects .project-container .project-list .project-item .project-desc.front .links a .source {
-                outline: 1px solid black;
+                outline: 1px solid #858585;
                 margin: 0 auto;
                 padding: 2%;
                 display: inline-block;
@@ -456,6 +548,75 @@ body, html {
   .project-container img {
     height: 300px;
     width: 400px; } }
+
+@media (max-width: 400px) and (orientation: portrait) {
+  .projects .project-container {
+    min-height: min-content;
+    width: 250px;
+    margin-bottom: 10%; }
+    .projects .project-container .project-list {
+      padding-bottom: 5%; }
+      .projects .project-container .project-list .project-item {
+        height: 140px;
+        width: 200px; }
+        .projects .project-container .project-list .project-item .container .front {
+          font-size: .9em; }
+          .projects .project-container .project-list .project-item .container .front img {
+            height: 140px;
+            width: 200px; } }
+
+@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+  .projects .project-container {
+    min-height: min-content;
+    width: 350px;
+    margin-bottom: 10%; }
+    .projects .project-container .project-list {
+      padding-bottom: 5%; }
+      .projects .project-container .project-list .project-item {
+        height: 190px;
+        width: 250px; }
+        .projects .project-container .project-list .project-item .container .front {
+          font-size: 1.15em; }
+          .projects .project-container .project-list .project-item .container .front img {
+            height: 190px;
+            width: 250px; } }
+
+@media (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
+  .projects .project-container {
+    min-height: min-content;
+    width: 700px;
+    margin: 15% auto; }
+    .projects .project-container .project-list .project-item {
+      height: 200px;
+      width: 275px; }
+      .projects .project-container .project-list .project-item .container .front {
+        font-size: 1.2em; }
+        .projects .project-container .project-list .project-item .container .front img {
+          height: 200px;
+          width: 275px; } }
+
+@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
+  .projects .project-container {
+    min-height: min-content;
+    width: 700px;
+    margin: 1% auto 2%; }
+    .projects .project-container .project-list {
+      margin-bottom: 2%; }
+      .projects .project-container .project-list .project-item {
+        height: 125px;
+        width: 200px;
+        margin: 2% 5% 1%; }
+        .projects .project-container .project-list .project-item .container .front img {
+          height: 125px;
+          width: 200px; } }
+
+@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+  .projects .project-container {
+    min-height: min-content;
+    width: 900px;
+    margin: 5% auto 5%; }
+    .projects .project-container .project-list {
+      margin-bottom: 5%; } }
 
 .divider {
   height: 250px;

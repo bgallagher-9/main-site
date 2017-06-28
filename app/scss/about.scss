@@ -1,7 +1,8 @@
 .about-bg {
   background-color: #fff;
   width: 100%;
-  min-height: 100%;
+  min-height: 125%;
+  display: block;
 
 
   h3 {
@@ -9,25 +10,27 @@
     text-align: center;
     font-size: 2em;
     font-weight: 700;
-    padding-top: 15%;
+    padding-top: 10%;
   }
 
   .about {
-    width: 70%;
-    height: 70%;
-    margin: 3% auto 0;
+    width: 1050px;
+    height: 750px;
+    margin: 3% auto 10%;
     color: white;
     // outline: 1px red solid;
     position: relative;
+
     .about-card {
-      height: 260px;
-      width: 260px;
+      height: 250px;
+      width: 250px;
       font-size: 1.2em;
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
       text-align: center;
       line-height: 1.2em;
       display: inline-block;
       padding: 2%;
+
     }
     .p-card1 {
       position: absolute;
@@ -62,51 +65,50 @@
 .fadein {
   animation: fadein 2.7s;
 }
-
 .card-slide1 {
-  transform: translate(100px, 100px);
+  transform: translate(110px, 110px);
   transition: all 1.5s ease-in-out;
 }
 .card-slide2 {
-  transform: translate(-100px, 100px);
+  transform: translate(-110px, 110px);
   transition: all 1.5s ease-in-out;
   }
 .card-slide3 {
-  transform: translate(100px, -100px);
+  transform: translate(110px, -110px);
   transition: all 1.5s ease-in-out;
 }
 .card-slide4 {
-  transform: translate(-100px, -100px);
+  transform: translate(-110px, -110px);
   transition: all 1.5s ease-in-out;
 }
 
 @media (max-width: 400px) and (orientation: portrait) {
   .about-bg {
+    margin: 0 auto;
     .about {
-
+      min-height: min-content;
+      width: 300px;
+      text-align: center;
+      display: block;
       .about-card {
-        height: 200px;
-        width: 200px;
+        height: 225px;
+        width: 225px;
         display: inline-block;
-
+        margin: 5% auto 0;
         font-size: 1.1em;
-        line-height: 1.1em;
+        line-height: 1.2em;
       }
       .p-card1 {
         position: static;
-        background-color: #e0a056;
       }
       .p-card2 {
         position: static;
-        background-color: #65A6E8;
       }
       .p-card3 {
         position: static;
-        background-color: #824328;
       }
       .p-card4 {
         position: static;
-        background-color: #B7390B;
       }
       .card-slide1 {
         transform: translate(0px, 0px);
@@ -124,6 +126,121 @@
         transform: translate(0px, 0px);
         transition: all 1.5s ease-in-out;
       }
+    }
+  }
+}
+
+@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+  .about-bg {
+    margin: 0 auto;
+    .about {
+      min-height: min-content;
+      width: 375px;
+      text-align: center;
+      display: block;
+      .about-card {
+        height: 260px;
+        width: 275px;
+        margin: 5% auto 0;
+        font-size: 1.3em;
+        line-height: 1.2em;
+      }
+      .p-card1 {
+        position: static;
+      }
+      .p-card2 {
+        position: static;
+      }
+      .p-card3 {
+        position: static;
+      }
+      .p-card4 {
+        position: static;
+      }
+      .card-slide1 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+      }
+      .card-slide2 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+        }
+      .card-slide3 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+      }
+      .card-slide4 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 730px) and (orientation: portrait) {
+  .about-bg {
+    min-height: 100%;
+    .about {
+      height: 800px;
+      width: 700px;
+    }
+  }
+}
+
+@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
+  .about-bg {
+    min-height: 100%;
+    .about {
+      min-height: min-content;
+      width: 600px;
+      text-align: center;
+      display: block;
+      .about-card {
+        height: 260px;
+        width: 275px;
+        margin: 5% auto 0;
+        font-size: 1.3em;
+        line-height: 1.2em;
+      }
+      .p-card1 {
+        position: static;
+      }
+      .p-card2 {
+        position: static;
+      }
+      .p-card3 {
+        position: static;
+      }
+      .p-card4 {
+        position: static;
+      }
+      .card-slide1 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+      }
+      .card-slide2 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+        }
+      .card-slide3 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+      }
+      .card-slide4 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+  .about-bg {
+    min-height: 100%;
+    .about {
+      height: 800px;
+      width: 700px;
     }
   }
 }
