@@ -187,7 +187,7 @@
   }
 }
 
-@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
+@media (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
   .about-bg {
     min-height: 100%;
     .about {
@@ -233,6 +233,52 @@
     }
   }
 }
+@media (max-width: 667px) and (orientation: landscape) {
+  .about-bg {
+    min-height: 100%;
+    .about {
+      min-height: min-content;
+      width: 500px;
+      text-align: center;
+      display: block;
+      .about-card {
+        height: 200px;
+        width: 250px;
+        margin: 5% auto 0;
+        font-size: 1.15em;
+        line-height: 1.1em;
+      }
+      .p-card1 {
+        position: static;
+      }
+      .p-card2 {
+        position: static;
+      }
+      .p-card3 {
+        position: static;
+      }
+      .p-card4 {
+        position: static;
+      }
+      .card-slide1 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+      }
+      .card-slide2 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+        }
+      .card-slide3 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+      }
+      .card-slide4 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out;
+      }
+    }
+  }
+}
 
 
 @media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
@@ -241,6 +287,24 @@
     .about {
       height: 800px;
       width: 700px;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .about-bg {
+    min-height: 100%;
+    h3 {
+      font-size: 3em;
+    }
+    .about {
+      height: 800px;
+      width: 1300px;
+      .about-card {
+        height: 300px;
+        width: 300px;
+        font-size: 1.35em;
+      }
     }
   }
 }

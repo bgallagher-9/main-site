@@ -275,3 +275,27 @@ body, html {
     }
   }
 }
+
+@media (min-width: 1500px) {
+  .home {
+    .container-home {
+      .name {
+        h1 {
+          font-size: 1.5em;
+        }
+        div {
+          font-size: 1.3em;
+        }
+        p {
+          font-size: 1.2em;
+        }
+      }
+    }
+    .home-slide {
+      transform: translateX(60%);
+    }
+    .face {
+      margin-left: 10%;
+    }
+  }
+}

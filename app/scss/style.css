@@ -246,6 +246,18 @@ body, html {
     zoom: .5;
     margin-top: 6%; } }
 
+@media (min-width: 1500px) {
+  .home .container-home .name h1 {
+    font-size: 1.5em; }
+  .home .container-home .name div {
+    font-size: 1.3em; }
+  .home .container-home .name p {
+    font-size: 1.2em; }
+  .home .home-slide {
+    transform: translateX(60%); }
+  .home .face {
+    margin-left: 10%; } }
+
 .about-bg {
   background-color: #fff;
   width: 100%;
@@ -392,7 +404,7 @@ body, html {
       height: 800px;
       width: 700px; } }
 
-@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
+@media (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
   .about-bg {
     min-height: 100%; }
     .about-bg .about {
@@ -427,12 +439,60 @@ body, html {
         transform: translate(0px, 0px);
         transition: all 1.5s ease-in-out; } }
 
+@media (max-width: 667px) and (orientation: landscape) {
+  .about-bg {
+    min-height: 100%; }
+    .about-bg .about {
+      min-height: min-content;
+      width: 500px;
+      text-align: center;
+      display: block; }
+      .about-bg .about .about-card {
+        height: 200px;
+        width: 250px;
+        margin: 5% auto 0;
+        font-size: 1.15em;
+        line-height: 1.1em; }
+      .about-bg .about .p-card1 {
+        position: static; }
+      .about-bg .about .p-card2 {
+        position: static; }
+      .about-bg .about .p-card3 {
+        position: static; }
+      .about-bg .about .p-card4 {
+        position: static; }
+      .about-bg .about .card-slide1 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide2 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide3 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; }
+      .about-bg .about .card-slide4 {
+        transform: translate(0px, 0px);
+        transition: all 1.5s ease-in-out; } }
+
 @media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .about-bg {
     min-height: 100%; }
     .about-bg .about {
       height: 800px;
       width: 700px; } }
+
+@media (min-width: 1500px) {
+  .about-bg {
+    min-height: 100%; }
+    .about-bg h3 {
+      font-size: 3em; }
+    .about-bg .about {
+      height: 800px;
+      width: 1300px; }
+      .about-bg .about .about-card {
+        height: 300px;
+        width: 300px;
+        font-size: 1.35em; } }
 
 .contact {
   background-color: #246ad0;
@@ -595,7 +655,38 @@ body, html {
           height: 200px;
           width: 275px; } }
 
-@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
+@media (max-width: 1030px) and (min-width: 770px) and (orientation: portrait) {
+  .projects .project-container {
+    min-height: min-content;
+    width: 900px;
+    margin: 15% auto; }
+    .projects .project-container .project-list .project-item {
+      height: 200px;
+      width: 275px; }
+      .projects .project-container .project-list .project-item .container .front {
+        font-size: 1.2em; }
+        .projects .project-container .project-list .project-item .container .front img {
+          height: 200px;
+          width: 275px; } }
+
+@media (max-width: 667px) and (orientation: landscape) {
+  .projects .project-container {
+    min-height: min-content;
+    width: 550px;
+    margin: 1% auto 2%; }
+    .projects .project-container .project-list {
+      margin-bottom: 2%; }
+      .projects .project-container .project-list .project-item {
+        height: 125px;
+        width: 200px;
+        margin: 2% 5% 1%; }
+        .projects .project-container .project-list .project-item .container .front {
+          font-size: .8em; }
+          .projects .project-container .project-list .project-item .container .front img {
+            height: 125px;
+            width: 200px; } }
+
+@media (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
   .projects .project-container {
     min-height: min-content;
     width: 700px;
@@ -617,6 +708,22 @@ body, html {
     margin: 5% auto 5%; }
     .projects .project-container .project-list {
       margin-bottom: 5%; } }
+
+@media (min-width: 1500px) {
+  .projects h3 {
+    font-size: 3em; }
+  .projects .project-container {
+    min-height: min-content;
+    width: 1500px;
+    margin: 5% auto; }
+    .projects .project-container .project-list .project-item {
+      height: 250px;
+      width: 350px; }
+      .projects .project-container .project-list .project-item .container .front {
+        font-size: 1.2em; }
+        .projects .project-container .project-list .project-item .container .front img {
+          height: 250px;
+          width: 350px; } }
 
 .divider {
   height: 250px;
