@@ -1,13 +1,13 @@
 .divider {
   height: 250px;
-  width: 100vw;
-  background-image: url("./../images/sun3.jpg");
+  width: 100%;
+  background-image: url("./../images/sun1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  -webkit-box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.6); }
+  -webkit-box-shadow: inset 0px 0px 10px 7px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0px 0px 10px 7px rgba(0, 0, 0, 0.4); }
 
 .divider .tint-divider {
   background-color: rgba(0, 0, 0, 0.5);

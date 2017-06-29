@@ -1,9 +1,40 @@
-.tint {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-  background-attachment: fixed;
+.contact {
+  background-color: #246ad0;
+  height: 43px;
+  width: 100%;
+  position: fixed;
   top: 0;
-  right: 0;
   left: 0;
-  bottom: 0;
-  height: 100vh; }
+  right: 0;
+  -webkit-box-shadow: 0 9px 8px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 9px 8px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.22); }
+
+.contact .gmail img {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 10px;
+  right: 12px; }
+
+.contact .linkedin img {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 10px;
+  right: 92px; }
+
+.contact .github img {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 10px;
+  right: 52px; }
+
+.contact .resume {
+  position: fixed;
+  top: 15px;
+  right: 132px; }
+
+.contact .resume a {
+  text-decoration: none;
+  color: white; }
