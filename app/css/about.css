@@ -22,8 +22,7 @@
   height: 250px;
   width: 250px;
   font-size: 1.2em;
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   text-align: center;
   line-height: 1.2em;
   display: inline-block;
@@ -63,33 +62,28 @@
 .card-slide1 {
   -webkit-transform: translate(110px, 110px);
           transform: translate(110px, 110px);
-  -webkit-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out; }
 
 .card-slide2 {
   -webkit-transform: translate(-110px, 110px);
           transform: translate(-110px, 110px);
-  -webkit-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out; }
 
 .card-slide3 {
   -webkit-transform: translate(110px, -110px);
           transform: translate(110px, -110px);
-  -webkit-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out; }
 
 .card-slide4 {
   -webkit-transform: translate(-110px, -110px);
           transform: translate(-110px, -110px);
-  -webkit-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out; }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media screen and (max-width: 400px) and (orientation: portrait) {
   .about-bg {
     margin: 0 auto; }
   .about-bg .about {
     min-height: -webkit-min-content;
-    min-height: -moz-min-content;
     min-height: min-content;
     width: 300px;
     text-align: center;
@@ -112,30 +106,25 @@
   .about-bg .about .card-slide1 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide2 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide3 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide4 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; } }
 
-@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
   .about-bg {
     margin: 0 auto; }
   .about-bg .about {
     min-height: -webkit-min-content;
-    min-height: -moz-min-content;
     min-height: min-content;
     width: 375px;
     text-align: center;
@@ -157,37 +146,32 @@
   .about-bg .about .card-slide1 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide2 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide3 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide4 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; } }
 
-@media (max-width: 1025px) and (min-width: 730px) and (orientation: portrait) {
+@media screen and (max-width: 1025px) and (min-width: 730px) and (orientation: portrait) {
   .about-bg {
     min-height: 100%; }
   .about-bg .about {
     height: 800px;
     width: 700px; } }
 
-@media (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
+@media screen and (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
   .about-bg {
     min-height: 100%; }
   .about-bg .about {
     min-height: -webkit-min-content;
-    min-height: -moz-min-content;
     min-height: min-content;
     width: 600px;
     text-align: center;
@@ -209,30 +193,25 @@
   .about-bg .about .card-slide1 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide2 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide3 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide4 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; } }
 
-@media (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 667px) and (orientation: landscape) {
   .about-bg {
     min-height: 100%; }
   .about-bg .about {
     min-height: -webkit-min-content;
-    min-height: -moz-min-content;
     min-height: min-content;
     width: 500px;
     text-align: center;
@@ -254,32 +233,28 @@
   .about-bg .about .card-slide1 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide2 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide3 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; }
   .about-bg .about .card-slide4 {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-    -webkit-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out; } }
 
-@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .about-bg {
     min-height: 100%; }
   .about-bg .about {
     height: 800px;
     width: 700px; } }
 
-@media (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .about-bg {
     min-height: 100%; }
   .about-bg h3 {

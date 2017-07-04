@@ -68,7 +68,7 @@ body, html {
     to   { opacity: 1; }
 }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media screen and (max-width: 400px) and (orientation: portrait) {
   .home {
     .face {
       height: 125px;
@@ -97,7 +97,7 @@ body, html {
 
 
 };
-@media (max-width: 641px) and (orientation: landscape) {
+@media screen and (max-width: 641px) and (orientation: landscape) {
   .home {
     .face {
       height: 125px;
@@ -124,7 +124,7 @@ body, html {
   }
 };
 
-@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
   .home {
     .face {
       height: 125px;
@@ -134,7 +134,7 @@ body, html {
     }
     .container-home {
       margin-top: 40%;
-      height: 30%;
+      height: 35%;
       width: 45%;
     }
     .name {
@@ -152,7 +152,7 @@ body, html {
   }
 };
 
-@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
+@media screen and (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
   .home {
     .face {
       height: 175px;
@@ -162,7 +162,7 @@ body, html {
     }
     .container-home {
       margin-top: 20%;
-      height: 45%;
+      height: 50%;
       width: 45%;
     }
     .name {
@@ -175,14 +175,14 @@ body, html {
     }
     .cvs {
       zoom: .4;
-      padding-top: 7%;
+      padding-top: 5%;
     }
   }
 };
-@media (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
   .home {
     .container-home {
-      height: 35%;
+      height: 40%;
     }
     .home-slide {
       transform: translateX(35%);
@@ -205,18 +205,16 @@ body, html {
       height: 225px;
       width: 225px;
       margin-left: 7%;
-      margin-bottom: 7%;
+      margin-bottom: 4%;
     }
     .cvs {
-      zoom: .8;
-      // margin-top: 6%;
+      zoom: .7;
     }
   }
 }
 
-@media (max-width: 1025px) and (min-width: 769px) and (orientation: portrait) {
+@media screen and (max-width: 1025px) and (min-width: 769px) and (orientation: portrait) {
   .home {
-    // margin-top: 15%;
     .container-home {
       height: 35%;
     }
@@ -250,10 +248,10 @@ body, html {
   }
 }
 
-@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .home {
     .container-home {
-      height: 40%;
+      height: 45%;
     }
     .home-slide {
       transform: translateX(17vw);
@@ -266,17 +264,16 @@ body, html {
     .face {
       height: 250px;
       width: 250px;
-      // margin-bottom: 8vh;
       margin-left: 6vw;
     }
     .cvs {
       zoom: .5;
-      margin-top: 6%;
+      margin-top: 3%;
     }
   }
 }
 
-@media (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .home {
     .container-home {
       .name {
@@ -297,5 +294,34 @@ body, html {
     .face {
       margin-left: 10%;
     }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .home {
+    .container-home {
+      .name {
+        h1 {
+          font-size: 1.5em;
+        }
+        div {
+          font-size: 1.3em;
+        }
+        p {
+          font-size: 1.2em;
+        }
+        color: red;
+      }
+    }
+    .home-slide {
+      transform: translateX(60%);
+    }
+    .face {
+      margin-left: 10%;
+    }
+    // .cvs {
+    //   zoom: .6;
+    //   margin-top: 20%;
+    // }
   }
 }

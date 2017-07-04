@@ -17,6 +17,7 @@
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     .project-list {
       text-align: center;
+      object-fit: contain;
       .project-item {
         height: 175px;
         width: 250px;
@@ -91,7 +92,7 @@
   }
 };
 
-@media (min-width: 1760px) {
+@media screen and (min-width: 1760px) {
   .project-container {
     img {
       height: 300px;
@@ -100,7 +101,7 @@
   }
 };
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media screen and (max-width: 400px) and (orientation: portrait) {
   .projects {
     .project-container {
       min-height: min-content;
@@ -126,7 +127,7 @@
   }
 };
 
-@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
   .projects {
     .project-container {
       min-height: min-content;
@@ -152,7 +153,7 @@
   }
 };
 
-@media (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
   .projects {
     .project-container {
       min-height: min-content;
@@ -176,7 +177,7 @@
     }
   }
 }
-@media (max-width: 1030px) and (min-width: 770px) and (orientation: portrait) {
+@media screen and (max-width: 1030px) and (min-width: 770px) and (orientation: portrait) {
   .projects {
     .project-container {
       min-height: min-content;
@@ -200,7 +201,7 @@
     }
   }
 }
-@media (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 667px) and (orientation: landscape) {
   .projects {
     .project-container {
       min-height: min-content;
@@ -227,11 +228,11 @@
   }
 }
 
-@media (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
+@media screen and (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
   .projects {
     .project-container {
       min-height: min-content;
-      width: 700px;
+      width: 85%;
       margin: 1% auto 2%;
       .project-list {
         margin-bottom: 2%;
@@ -241,6 +242,7 @@
           margin: 2% 5% 1%;
           .container {
             .front {
+              font-size: .8em;
               img {
                 height: 125px;
                 width: 200px;
@@ -253,12 +255,13 @@
   }
 };
 
-@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .projects {
     .project-container {
       min-height: min-content;
       width: 900px;
       margin: 5% auto 5%;
+
       .project-list {
         margin-bottom: 5%;
 
@@ -267,7 +270,7 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .projects {
     h3 {
       font-size: 3em;

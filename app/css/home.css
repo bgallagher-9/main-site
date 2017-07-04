@@ -11,8 +11,7 @@ body, html {
   background-color: #246ad0;
   width: 40%;
   height: 50%;
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
 .home .centered {
   margin: 15% auto 0; }
@@ -44,7 +43,6 @@ body, html {
 .home-slide {
   -webkit-transform: translateX(45%);
           transform: translateX(45%);
-  -webkit-transition: all 1.3s ease-in-out;
   transition: all 1.3s ease-in-out;
   display: inline-block; }
 
@@ -61,8 +59,7 @@ body, html {
   -webkit-animation: fadein 3s;
           animation: fadein 3s;
   display: inline-block;
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
 @-webkit-keyframes fadein {
   from {
@@ -76,7 +73,7 @@ body, html {
   to {
     opacity: 1; } }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media screen and (max-width: 400px) and (orientation: portrait) {
   .home .face {
     height: 125px;
     width: 125px;
@@ -97,7 +94,7 @@ body, html {
     zoom: .3;
     padding-top: 35%; } }
 
-@media (max-width: 641px) and (orientation: landscape) {
+@media screen and (max-width: 641px) and (orientation: landscape) {
   .home .face {
     height: 125px;
     width: 125px;
@@ -117,7 +114,7 @@ body, html {
     zoom: .4;
     padding-top: 7%; } }
 
-@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
   .home .face {
     height: 125px;
     width: 125px;
@@ -125,7 +122,7 @@ body, html {
     margin-left: 5%; }
   .home .container-home {
     margin-top: 40%;
-    height: 30%;
+    height: 35%;
     width: 45%; }
   .home .name {
     font-size: 1em;
@@ -138,7 +135,7 @@ body, html {
     zoom: .4;
     padding-top: 10%; } }
 
-@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
+@media screen and (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
   .home .face {
     height: 175px;
     width: 175px;
@@ -146,7 +143,7 @@ body, html {
     margin-bottom: -2%; }
   .home .container-home {
     margin-top: 20%;
-    height: 45%;
+    height: 50%;
     width: 45%; }
   .home .name {
     font-size: 1em;
@@ -157,11 +154,11 @@ body, html {
             transform: translateX(42%); }
   .home .cvs {
     zoom: .4;
-    padding-top: 7%; } }
+    padding-top: 5%; } }
 
-@media (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
   .home .container-home {
-    height: 35%; }
+    height: 40%; }
   .home .home-slide {
     -webkit-transform: translateX(35%);
             transform: translateX(35%); }
@@ -179,11 +176,11 @@ body, html {
     height: 225px;
     width: 225px;
     margin-left: 7%;
-    margin-bottom: 7%; }
+    margin-bottom: 4%; }
   .home .cvs {
-    zoom: .8; } }
+    zoom: .7; } }
 
-@media (max-width: 1025px) and (min-width: 769px) and (orientation: portrait) {
+@media screen and (max-width: 1025px) and (min-width: 769px) and (orientation: portrait) {
   .home .container-home {
     height: 35%; }
   .home .home-slide {
@@ -207,9 +204,9 @@ body, html {
   .home .cvs {
     padding-top: 5%; } }
 
-@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .home .container-home {
-    height: 40%; }
+    height: 45%; }
   .home .home-slide {
     -webkit-transform: translateX(17vw);
             transform: translateX(17vw); }
@@ -222,9 +219,24 @@ body, html {
     margin-left: 6vw; }
   .home .cvs {
     zoom: .5;
-    margin-top: 6%; } }
+    margin-top: 3%; } }
 
-@media (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
+  .home .container-home .name h1 {
+    font-size: 1.5em; }
+  .home .container-home .name div {
+    font-size: 1.3em; }
+  .home .container-home .name p {
+    font-size: 1.2em; }
+  .home .home-slide {
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%); }
+  .home .face {
+    margin-left: 10%; } }
+
+@media screen and (min-width: 2000px) {
+  .home .container-home .name {
+    color: red; }
   .home .container-home .name h1 {
     font-size: 1.5em; }
   .home .container-home .name div {

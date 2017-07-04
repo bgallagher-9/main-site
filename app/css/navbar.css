@@ -6,8 +6,7 @@
   top: 0;
   left: 0;
   right: 0;
-  -webkit-box-shadow: 0 9px 8px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 9px 8px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.22); }
+  box-shadow: 0 9px 8px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.22); }
 
 .contact .gmail img {
   width: 25px;

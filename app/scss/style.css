@@ -105,7 +105,7 @@ body, html {
   to {
     opacity: 1; } }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media screen and (max-width: 400px) and (orientation: portrait) {
   .home .face {
     height: 125px;
     width: 125px;
@@ -125,7 +125,7 @@ body, html {
     zoom: .3;
     padding-top: 35%; } }
 
-@media (max-width: 641px) and (orientation: landscape) {
+@media screen and (max-width: 641px) and (orientation: landscape) {
   .home .face {
     height: 125px;
     width: 125px;
@@ -144,7 +144,7 @@ body, html {
     zoom: .4;
     padding-top: 7%; } }
 
-@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
   .home .face {
     height: 125px;
     width: 125px;
@@ -152,7 +152,7 @@ body, html {
     margin-left: 5%; }
   .home .container-home {
     margin-top: 40%;
-    height: 30%;
+    height: 35%;
     width: 45%; }
   .home .name {
     font-size: 1em;
@@ -164,7 +164,7 @@ body, html {
     zoom: .4;
     padding-top: 10%; } }
 
-@media (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
+@media screen and (max-width: 799px) and (min-width: 666px) and (orientation: landscape) {
   .home .face {
     height: 175px;
     width: 175px;
@@ -172,7 +172,7 @@ body, html {
     margin-bottom: -2%; }
   .home .container-home {
     margin-top: 20%;
-    height: 45%;
+    height: 50%;
     width: 45%; }
   .home .name {
     font-size: 1em;
@@ -182,11 +182,11 @@ body, html {
     transform: translateX(42%); }
   .home .cvs {
     zoom: .4;
-    padding-top: 7%; } }
+    padding-top: 5%; } }
 
-@media (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
   .home .container-home {
-    height: 35%; }
+    height: 40%; }
   .home .home-slide {
     transform: translateX(35%); }
   .home .name {
@@ -203,11 +203,11 @@ body, html {
     height: 225px;
     width: 225px;
     margin-left: 7%;
-    margin-bottom: 7%; }
+    margin-bottom: 4%; }
   .home .cvs {
-    zoom: .8; } }
+    zoom: .7; } }
 
-@media (max-width: 1025px) and (min-width: 769px) and (orientation: portrait) {
+@media screen and (max-width: 1025px) and (min-width: 769px) and (orientation: portrait) {
   .home .container-home {
     height: 35%; }
   .home .home-slide {
@@ -230,9 +230,9 @@ body, html {
   .home .cvs {
     padding-top: 5%; } }
 
-@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .home .container-home {
-    height: 40%; }
+    height: 45%; }
   .home .home-slide {
     transform: translateX(17vw); }
   .home .name {
@@ -244,15 +244,29 @@ body, html {
     margin-left: 6vw; }
   .home .cvs {
     zoom: .5;
-    margin-top: 6%; } }
+    margin-top: 3%; } }
 
-@media (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .home .container-home .name h1 {
     font-size: 1.5em; }
   .home .container-home .name div {
     font-size: 1.3em; }
   .home .container-home .name p {
     font-size: 1.2em; }
+  .home .home-slide {
+    transform: translateX(60%); }
+  .home .face {
+    margin-left: 10%; } }
+
+@media screen and (min-width: 2000px) {
+  .home .container-home .name {
+    color: red; }
+    .home .container-home .name h1 {
+      font-size: 1.5em; }
+    .home .container-home .name div {
+      font-size: 1.3em; }
+    .home .container-home .name p {
+      font-size: 1.2em; }
   .home .home-slide {
     transform: translateX(60%); }
   .home .face {
@@ -326,7 +340,7 @@ body, html {
   transform: translate(-110px, -110px);
   transition: all 1.5s ease-in-out; }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media screen and (max-width: 400px) and (orientation: portrait) {
   .about-bg {
     margin: 0 auto; }
     .about-bg .about {
@@ -362,7 +376,7 @@ body, html {
         transform: translate(0px, 0px);
         transition: all 1.5s ease-in-out; } }
 
-@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
   .about-bg {
     margin: 0 auto; }
     .about-bg .about {
@@ -397,14 +411,14 @@ body, html {
         transform: translate(0px, 0px);
         transition: all 1.5s ease-in-out; } }
 
-@media (max-width: 1025px) and (min-width: 730px) and (orientation: portrait) {
+@media screen and (max-width: 1025px) and (min-width: 730px) and (orientation: portrait) {
   .about-bg {
     min-height: 100%; }
     .about-bg .about {
       height: 800px;
       width: 700px; } }
 
-@media (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
+@media screen and (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
   .about-bg {
     min-height: 100%; }
     .about-bg .about {
@@ -439,7 +453,7 @@ body, html {
         transform: translate(0px, 0px);
         transition: all 1.5s ease-in-out; } }
 
-@media (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 667px) and (orientation: landscape) {
   .about-bg {
     min-height: 100%; }
     .about-bg .about {
@@ -474,14 +488,14 @@ body, html {
         transform: translate(0px, 0px);
         transition: all 1.5s ease-in-out; } }
 
-@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .about-bg {
     min-height: 100%; }
     .about-bg .about {
       height: 800px;
       width: 700px; } }
 
-@media (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .about-bg {
     min-height: 100%; }
     .about-bg h3 {
@@ -546,7 +560,8 @@ body, html {
     margin: 10vh auto 0;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
     .projects .project-container .project-list {
-      text-align: center; }
+      text-align: center;
+      object-fit: contain; }
       .projects .project-container .project-list .project-item {
         height: 175px;
         width: 250px;
@@ -604,12 +619,12 @@ body, html {
         transform: rotateY(180deg);
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
-@media (min-width: 1760px) {
+@media screen and (min-width: 1760px) {
   .project-container img {
     height: 300px;
     width: 400px; } }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media screen and (max-width: 400px) and (orientation: portrait) {
   .projects .project-container {
     min-height: min-content;
     width: 250px;
@@ -625,7 +640,7 @@ body, html {
             height: 140px;
             width: 200px; } }
 
-@media (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (min-width: 401px) and (orientation: portrait) {
   .projects .project-container {
     min-height: min-content;
     width: 350px;
@@ -641,7 +656,7 @@ body, html {
             height: 190px;
             width: 250px; } }
 
-@media (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (min-width: 501px) and (orientation: portrait) {
   .projects .project-container {
     min-height: min-content;
     width: 700px;
@@ -655,7 +670,7 @@ body, html {
           height: 200px;
           width: 275px; } }
 
-@media (max-width: 1030px) and (min-width: 770px) and (orientation: portrait) {
+@media screen and (max-width: 1030px) and (min-width: 770px) and (orientation: portrait) {
   .projects .project-container {
     min-height: min-content;
     width: 900px;
@@ -669,7 +684,7 @@ body, html {
           height: 200px;
           width: 275px; } }
 
-@media (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 667px) and (orientation: landscape) {
   .projects .project-container {
     min-height: min-content;
     width: 550px;
@@ -686,10 +701,10 @@ body, html {
             height: 125px;
             width: 200px; } }
 
-@media (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
+@media screen and (max-width: 799px) and (min-width: 668px) and (orientation: landscape) {
   .projects .project-container {
     min-height: min-content;
-    width: 700px;
+    width: 85%;
     margin: 1% auto 2%; }
     .projects .project-container .project-list {
       margin-bottom: 2%; }
@@ -697,11 +712,13 @@ body, html {
         height: 125px;
         width: 200px;
         margin: 2% 5% 1%; }
-        .projects .project-container .project-list .project-item .container .front img {
-          height: 125px;
-          width: 200px; } }
+        .projects .project-container .project-list .project-item .container .front {
+          font-size: .8em; }
+          .projects .project-container .project-list .project-item .container .front img {
+            height: 125px;
+            width: 200px; } }
 
-@media (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-width: 800px) and (orientation: landscape) {
   .projects .project-container {
     min-height: min-content;
     width: 900px;
@@ -709,7 +726,7 @@ body, html {
     .projects .project-container .project-list {
       margin-bottom: 5%; } }
 
-@media (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .projects h3 {
     font-size: 3em; }
   .projects .project-container {
