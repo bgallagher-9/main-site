@@ -37,7 +37,7 @@ gulp.task('styles', ['clean-styles'], function() {
     .pipe(glp.plumber())
     .pipe(glp.sass())
     .pipe(glp.sass().on('error', errorLogger))
-    .pipe(glp.autoprefixer({browsers: ['last 2 version', '> 5%']}))
+    .pipe(glp.autoprefixer({browsers: ['> 7%']}))
     .pipe(gulp.dest('./app/css/'));
 });
 
@@ -82,7 +82,13 @@ gulp.task('concat-min-css', function() {
     .pipe(gulp.dest('./app/dist/'));
 });
 
-gulp.task('concat-min', ['concat-min-css', 'concat-min-js'])
+gulp.task('concat-min', ['concat-min-css', 'concat-min-js']);
+
+gulp.task('compress', function() {
+    gulp.src('./app/dist/*.js')
+    .pipe(glp.gzip())
+    .pipe(gulp.dest('./app/public/'));
+});
 
 
 ///////////////////////////////////////////////////
