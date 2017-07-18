@@ -95,7 +95,7 @@ function intro() {
 setTimeout(intro, 2500);
 
 function aboutScroll(evt) {
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
   if (window.scrollY >= 410) {
     p1.classList.add('card-slide1');
     p2.classList.add('card-slide2');

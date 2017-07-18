@@ -2,6 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- GTM -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-53LPBTG');</script>
+    <!-- End GTM -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.ico">
@@ -10,6 +17,10 @@
     <title>Brian Gallagher - Developer | Technologist</title>
   </head>
   <body>
+    <!-- GTM(noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53LPBTG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End GTM(noscript) -->
     <!-- Home -->
     <div class="home">
       <div class="image"></div>
@@ -114,6 +125,12 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'pageVisibilityTracker');
+      ga('require', 'impressionTracker');
+      ga('require', 'mediaQueryTracker');
 
       ga('create', 'UA-101858927-1', 'auto');
       ga('send', 'pageview');
